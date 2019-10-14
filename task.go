@@ -5,9 +5,9 @@ import (
 	"fmt"
 	_ "github.com/lib/pq"
 	"log"
-	"test-task/infrastructures"
-	"test-task/repositories"
-	"test-task/services"
+	"github.com/noting59/Golang-Solid-Implementation/infrastructures"
+	"github.com/noting59/Golang-Solid-Implementation/repositories"
+	"github.com/noting59/Golang-Solid-Implementation/services"
 	"time"
 )
 

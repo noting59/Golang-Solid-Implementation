@@ -1,7 +1,7 @@
 package interfaces
 
 import (
-	"test-task/models"
+	"github.com/noting59/Golang-Solid-Implementation/models"
 )
 
 type IProductRepository interface {

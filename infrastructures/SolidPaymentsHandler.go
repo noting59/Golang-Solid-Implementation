@@ -11,10 +11,10 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-	"test-task/DTO"
-	"test-task/interfaces"
-	"test-task/models"
-	"test-task/repositories"
+	"github.com/noting59/Golang-Solid-Implementation/DTO"
+	"github.com/noting59/Golang-Solid-Implementation/interfaces"
+	"github.com/noting59/Golang-Solid-Implementation/models"
+	"github.com/noting59/Golang-Solid-Implementation/repositories"
 )
 
 const ApiUrl = "https://pay.sp-stage.us/api/v1/"

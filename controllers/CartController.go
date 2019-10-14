@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-	"test-task/interfaces"
+	"github.com/noting59/Golang-Solid-Implementation/interfaces"
 )
 
 type CartController struct {

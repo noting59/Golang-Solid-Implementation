@@ -1,8 +1,8 @@
 package services
 
 import (
-	"test-task/interfaces"
-	"test-task/models"
+	"github.com/noting59/Golang-Solid-Implementation/interfaces"
+	"github.com/noting59/Golang-Solid-Implementation/models"
 )
 
 type UserService struct {

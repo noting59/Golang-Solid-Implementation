@@ -1,8 +1,8 @@
 package interfaces
 
 import (
-	"test-task/DTO"
-	"test-task/models"
+	"github.com/noting59/Golang-Solid-Implementation/DTO"
+	"github.com/noting59/Golang-Solid-Implementation/models"
 )
 
 type IOrderService interface {

@@ -1,6 +1,6 @@
 package interfaces
 
-import "test-task/models"
+import "github.com/noting59/Golang-Solid-Implementation/models"
 
 type IOrderRepository interface {
 	Create(productId int, userId int, name string, price float32) (int, error)

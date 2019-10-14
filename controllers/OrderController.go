@@ -4,7 +4,7 @@ import (
 	"github.com/thedevsaddam/renderer"
 	"log"
 	"net/http"
-	"test-task/interfaces"
+	"github.com/noting59/Golang-Solid-Implementation/interfaces"
 )
 
 type OrderController struct {

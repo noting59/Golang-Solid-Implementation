@@ -1,6 +1,6 @@
 package interfaces
 
-import "test-task/DTO"
+import "github.com/noting59/Golang-Solid-Implementation/DTO"
 
 type ICartService interface {
 	AddProductToCart(userId int, productId int) (bool, error)

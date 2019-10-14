@@ -1,8 +1,8 @@
 package services
 
 import (
-	"test-task/DTO"
-	"test-task/interfaces"
+	"github.com/noting59/Golang-Solid-Implementation/DTO"
+	"github.com/noting59/Golang-Solid-Implementation/interfaces"
 )
 
 type CartService struct {

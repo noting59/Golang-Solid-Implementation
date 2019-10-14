@@ -1,7 +1,7 @@
 package infrastructures
 
 import (
-	"test-task/interfaces"
+	"github.com/noting59/Golang-Solid-Implementation/interfaces"
 	"database/sql"
 	"fmt"
 )

@@ -1,6 +1,6 @@
 package DTO
 
-import "test-task/models"
+import "github.com/noting59/Golang-Solid-Implementation/models"
 
 type OrderDTO struct {
 	Id int

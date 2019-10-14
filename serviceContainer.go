@@ -3,13 +3,13 @@ package main
 import (
 	"database/sql"
 	_ "github.com/lib/pq"
+	"github.com/noting59/Golang-Solid-Implementation/controllers"
+	"github.com/noting59/Golang-Solid-Implementation/infrastructures"
+	"github.com/noting59/Golang-Solid-Implementation/repositories"
+	"github.com/noting59/Golang-Solid-Implementation/services"
 	"github.com/thedevsaddam/renderer"
 	"log"
 	"sync"
-	"test-task/controllers"
-	"test-task/infrastructures"
-	"test-task/repositories"
-	"test-task/services"
 )
 
 type IServiceContainer interface {
