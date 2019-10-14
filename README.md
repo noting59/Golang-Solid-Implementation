@@ -14,6 +14,7 @@ Copy file config.yaml.dist to config.yaml
     Hear U should specify your connection string to PostgreSQL
 
 Setup dependencies
+
     go get github.com/lib/pq
     go get github.com/thedevsaddam/renderer
     go get -u github.com/go-chi/chi
