@@ -15,9 +15,10 @@ Copy file config.yaml.dist to config.yaml
 
 Setup dependencies
     go get github.com/lib/pq
-	  go get github.com/thedevsaddam/renderer
+    go get github.com/thedevsaddam/renderer
     go get -u github.com/go-chi/chi
     go get github.com/afex/hystrix-go/hystrix
+    go get github.com/noting59/Golang-Solid-Implementation
 
 Setup sqlite data structure
 
