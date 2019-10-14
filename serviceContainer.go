@@ -20,19 +20,18 @@ type IServiceContainer interface {
 }
 
 var (
-	rnd  *renderer.Render
+	rnd               *renderer.Render
 	postgreSQLHandler *infrastructures.PostgreSQLHandler
-	orderRepository  *repositories.OrderRepository
+	orderRepository   *repositories.OrderRepository
 	productRepository *repositories.ProductRepository
-	userRepository *repositories.UserRepository
-	cartRepository  *repositories.CartRepository
-	userService *services.UserService
-	productService  *services.ProductService
-	orderService  *services.OrderService
-	cartService  *services.CartService
-	paymentService *infrastructures.SolidPayments
+	userRepository    *repositories.UserRepository
+	cartRepository    *repositories.CartRepository
+	userService       *services.UserService
+	productService    *services.ProductService
+	orderService      *services.OrderService
+	cartService       *services.CartService
+	paymentService    *infrastructures.SolidPayments
 )
-
 
 func init() {
 	rnd = renderer.New(renderer.Options{
@@ -60,8 +59,8 @@ func init() {
 	orderService = &services.OrderService{IOrderRepository: orderRepository, IProductService: productService, IUserService: userService}
 	paymentService = &infrastructures.SolidPayments{
 		IOrderService: orderService,
-		ICartService: cartService,
-		IUserService: userService,
+		ICartService:  cartService,
+		IUserService:  userService,
 	}
 }
 
@@ -69,32 +68,32 @@ type kernel struct{}
 
 func (k *kernel) InjectPayController() controllers.PayController {
 	payController := controllers.PayController{
-		Render: rnd,
+		Render:      rnd,
 		IPayHandler: paymentService,
 	}
 	return payController
 }
 
-func (k *kernel) InjectOrderController() controllers.OrderController  {
+func (k *kernel) InjectOrderController() controllers.OrderController {
 	orderController := controllers.OrderController{
-		Render: rnd,
-		ICartService: cartService,
+		Render:        rnd,
+		ICartService:  cartService,
 		IOrderService: orderService,
 	}
 	return orderController
 }
 
-func (k *kernel) InjectCartController() controllers.CartController  {
+func (k *kernel) InjectCartController() controllers.CartController {
 	cartController := controllers.CartController{
-		Render: rnd,
+		Render:       rnd,
 		ICartService: cartService,
 	}
 	return cartController
 }
 
-func (k *kernel) InjectProductController() controllers.ProductController  {
+func (k *kernel) InjectProductController() controllers.ProductController {
 	productController := controllers.ProductController{
-		Render: rnd,
+		Render:          rnd,
 		IProductService: productService,
 	}
 	return productController
@@ -113,4 +112,3 @@ func ServiceContainer() IServiceContainer {
 	}
 	return k
 }
-

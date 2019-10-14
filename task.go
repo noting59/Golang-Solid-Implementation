@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/lib/pq"
-	"log"
 	"github.com/noting59/Golang-Solid-Implementation/infrastructures"
 	"github.com/noting59/Golang-Solid-Implementation/repositories"
 	"github.com/noting59/Golang-Solid-Implementation/services"
+	"log"
 	"time"
 )
 
@@ -33,8 +33,8 @@ func init() {
 	orderService = &services.OrderService{IOrderRepository: orderRepository, IProductService: productService, IUserService: userService}
 	paymentService = &infrastructures.SolidPayments{
 		IOrderService: orderService,
-		ICartService: cartService,
-		IUserService: userService,
+		ICartService:  cartService,
+		IUserService:  userService,
 	}
 }
 

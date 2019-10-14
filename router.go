@@ -21,10 +21,8 @@ func (router *router) InitRouter() *chi.Mux {
 	r := chi.NewRouter()
 	r.HandleFunc("/", productController.Index)
 
-
 	r.HandleFunc("/add-to-cart", cartController.AddToCart)
 	r.HandleFunc("/cart", cartController.Cart)
-
 
 	r.HandleFunc("/order/new", orderController.NewOrder)
 	r.HandleFunc("/order/list", orderController.OrdersList)
@@ -50,4 +48,3 @@ func ChiRouter() IChiRouter {
 	}
 	return m
 }
-
