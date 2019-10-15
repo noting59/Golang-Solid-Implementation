@@ -6,7 +6,7 @@
 Fake online shop page with pay, one-click pay and refund using SOLID
 
 ----------
-Устанвока
+INSTALL
 -------
 
 Clone the source
@@ -15,8 +15,8 @@ Clone the source
 
 Copy file config.yaml.dist to config.yaml
   
-    Hear U should specify your connection string to PostgreSQL
-
+    postresql_conn: "user=user dbname=test sslmode=disable"
+    
 Setup dependencies
 
     go get github.com/lib/pq
