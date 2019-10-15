@@ -1,3 +1,7 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/noting59/Golang-Solid-Implementation/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/noting59/Golang-Solid-Implementation/?branch=master)
+
+[![Build Status](https://scrutinizer-ci.com/g/noting59/Golang-Solid-Implementation/badges/build.png?b=master)](https://scrutinizer-ci.com/g/noting59/Golang-Solid-Implementation/build-status/master)
+
 # Golang-Solid-Implementation
 Fake online shop page with pay, one-click pay and refund using SOLID
 
